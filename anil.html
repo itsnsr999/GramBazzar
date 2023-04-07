@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="eng">
+    <head>
+        <meta charset="UTF-8">
+        
+        <title>Gram Bazzar !ghar ka saman </title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="sanjay.css">
+        <link href="link rel="preconnect href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700;900&display=swap" rel="stylesheet"> 
+        
+        <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+    <body>
+     
+        <div class="container">
+            <div class="navbar">
+                <div class="logo">
+                    <a href="website.html"> <img src="logo.png" width="160px" alt="G Bazzar"></a>
+                </div>
+                <nav>
+                    <ul id="MenuItems">
+                        <li><a href="website.html">Home</a></li>
+                        <li><a href="product detail.html">Products</a></li>
+                        <li><a href="">About</a></li>
+                        <li><a href="loginpage.html">log in</a></li>
+                        <li><a href="">Contact</a></li>
+                    </ul>
+                </nav>
+                <a href="cart.html">
+                <img src="cart1.png" width="30px" height="30px" alt="cart"></a>
+                <img src="menu1.png" class="menu-icon" onclick="menutoggle">
+            </div>
+        </div>
+        
+ <!------- single product detail-------->
+ <div class="small-container single-product">
+     <div class="row">
+         <div class="col-2">
+             <a href="">
+             <img src="pappu.png" width="100%" id="ProductImg"></a>
+             <div class="small-img-row">
+                 <div class="small-img-col">
+                     <img src="m1.jpg" width="100%" class="SmallImg">
+                 </div>
+                 <div class="small-img-col">
+                    <img src="m2.jpg" width="100%" class="SmallImg">
+                </div>
+                <div class="small-img-col">
+                    <img src="m3.jpg" width="100%" class="SmallImg">
+                </div>
+                <div class="small-img-col">
+                    <img src="m4.jpg" width="100%" class="SmallImg">
+                </div>
+             </div>
+
+         </div>
+         <div class="col-2">
+             <p>Shopkeeper</p>
+             <h1> Anil Singh </h1>
+            
+            
+            <p>
+               <h2> He</h2> is one of the most <br>popular Medical Store(Pratibha Medical Store) owner in Kaimur Bihar(821110).<br>
+               HE belongs to Village named Deohalia which
+               comes in Deohalia Panchayat.<br>
+
+               Products in his Medical Shop:-<br>       1. Aloe vera gel.<br>
+               2.Calamine lotion.<br>
+               3.Anti-diarrhea medication.<br>
+               4.Laxative.<br>
+               5.Antacids.<br>
+               6.Antihistamine, such as diphenhydramine.<br>
+               7.Hydrocortisone cream.<br>
+               8.Cough and cold medications.<br>
+               
+
+                                           <div class="footer-col-4">
+                                            <h3>Contact Him</h3>
+                                            <ul>
+                                                
+                                                <a href="https://www.facebook.com/Gram-Bazzar-102563755901895/">
+                                                    <li>Facebook</li></a>
+                                                   <a href="https://instagram.com/gram_bazzar?igshid=YmMyMTA2M2Y="> <li>Instagram</li></a>
+                                                    <li>Twitter</li>
+                                                   <a href="https://youtube.com/channel/UC_-hNrjRAau4B25a9FcgB4A"> <li>YouTube</li></a>
+                                                
+                                            </ul>
+                                        </div>
+
+            </p>
+        </div>
+     </div>
+ </div>
+           
+                
+
+<!------ footer -------->
+<div class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="footer-col-1">
+                <h3>Thank you fir choosing us...</h3>
+                <p>Give Us Another Chance To Make Your Shopping Easier </p>
+            </div>
+            <div class="footer-col-2">
+                <img src="logo.png" alt="">
+                <p>Our Purpose Is To Provide Proper Benifits To the Farmers<br>And Giving Offline Shopping Feel Thrpugh Online..</p>
+            </div>
+            <div class="footer-col-3">
+                <h3>Useful Links</h3>
+                <ul>
+                    <li>Coupons</li>
+                    <li>Blog Post</li>
+                    <li>Return Policy</li>
+                    <li>Join Affilate</li>
+                    
+                </ul>
+            </div>
+            <div class="footer-col-4">
+                <h3>Follow Us</h3>
+                <ul>
+                    <a href="https://www.facebook.com/Gram-Bazzar-102563755901895/">
+                        <li>Facebook</li></a>
+                       <a href="https://instagram.com/gram_bazzar?igshid=YmMyMTA2M2Y="> <li>Instagram</li></a>
+                        <li>Twitter</li>
+                       <a href="https://youtube.com/channel/UC_-hNrjRAau4B25a9FcgB4A"> <li>YouTube</li></a>
+                    
+                </ul>
+            </div>
+        </div>
+        <hr>
+        <p class="copyright">Copyright 2022 - @Gram Bazzar</p>
+    </div>
+</div>
+
+<!------- js for toggle menu ------->
+<script>
+    var MenuItems = document.getElementById("MenuItems");
+    MenuItems.style.maxHeight = ("0px");
+    function menutoggle(){
+        if(MenuItems.style.maxHeight == "0px")
+        {
+            MenuItems.style.maxHeight = "200px"
+
+        }
+        else{
+            MenuItems.style.maxHeight == "0px"
+        }
+    }
+</script>
+
+
+<!------js for product gallery-------->
+<script>
+    var ProductImg = document.getElementById("ProductImg");
+    var SmallImg = document.getElementsByClassName("small-img");
+
+    SmallImg[0].onclick = function()
+    {
+        ProductImg.src = SmallImg[0].src;
+    }
+    SmallImg[1].onclick = function()
+    {
+        ProductImg.src = SmallImg[1].src;
+    }
+    SmallImg[2].onclick = function()
+    {
+        ProductImg.src = SmallImg[2].src;
+    }
+    SmallImg[3].onclick = function()
+    {
+        ProductImg.src = SmallImg[3].src;
+    }
+    SmallImg[4].onclick = function()
+    {
+        ProductImg.src = SmallImg[4].src;
+    }
+</script>
+
+    </body>
+</html>
